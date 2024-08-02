@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FINCASCOLOMBIA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/inputImg.css">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>luismiguelflorezsoto@gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+57 304 2185764</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                       
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">FINCAS</span>COLOMBIA</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="admin.html" class="nav-item nav-link active">Admin</a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+   
+
+
+    
+ 
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration p-0" >
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12 offset-lg-3-5">
+                    <div class="card border-0">
+                        <div  class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Crea un post</h1>
+                        </div>
+                        <div  class="card-body rounded-bottom bg-white p-5">
+                            <form id="formulario" name="" enctype="multipart/form-data" class="form_contant"  action="">
+                                
+                                <div class="mb-3" style="justify-content: center;align-items: center; display: flex;">
+                             
+                                  
+
+
+
+                                    <label id="label" for="file" class="file-upload-label">
+                                        <div class="file-upload-design" id="file-upload-design">
+                                        <img id="imgPrueba" src="img/fotoIcono.png" style="width: 50px;height: 50px;">
+                                        <img  id="previewImage" style="height: 200px; width: 150; object-fit: cover; display:none;" src="#" alt="Vista previa de la imagen"/>
+                                          <span class="browse-button">Seleccionar imagen</span>
+                                        </div>
+                                        <input  name="imagen" id="file" type="file" onchange="loadFile(event)" />
+                                      </label>
+                                     
+
+
+                                </div>
+                                
+                                
+                                
+                                <div class="mb-3">                                   
+                                    <input type="text" style="border: none;border-bottom: 2px solid rgb(35, 187, 35);" name="titulo" class="form-control" id="titulo" placeholder="Ingresa el título">
+                                </div>                                
+                               
+                                <div class="mb-3">                               
+                                    <textarea class="form-control" name="descripcion" id="descripcion" rows="20" placeholder="Escribe aquí la descripción"></textarea>
+                                </div>
+                               
+                                
+                                <div>
+                                    <button id="guardar" class="btn btn-primary btn-block py-3" >Crear</button>
+                                </div>
+                            </form>
+                           
+                            <div class="row">
+
+                                <div class="col-sm-5">
+                             
+                                </div>
+                                <div class="col-sm-4">
+                                    <button style="margin-top: 20px;" ><a href="tabla.html">Administrar posts</a> </button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Registration End -->
+<!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+
+    <script src="./js/logicaPost.js"></script>
+
+
+
+    <script>
+        var loadFile = function(event) {
+          var output = document.getElementById('previewImage');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          output.onload = function() {
+            URL.revokeObjectURL(output.src) // Liberar memoria
+          }
+          output.style.display = 'block'; // Muestra la vista previa
+          var fileUploadDesign = document.getElementById('imgPrueba');
+          fileUploadDesign.style.display = 'none'; // Oculta el recuadro
+          var fileUploadPreview = document.getElementById('previewImage');
+          fileUploadPreview.style.display = 'flex'; // Oculta el recuadro
+        };
+      </script>
+      
+</body>
+
+</html>
